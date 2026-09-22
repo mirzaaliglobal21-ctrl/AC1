@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Tajawal', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html[dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Sky Blue & Pure White Mix Theme Accents */
+.sky-white-gradient {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 40%, #ffffff 100%);
+}
+
+.sky-white-hero {
+  background: linear-gradient(145deg, #0284c7 0%, #0369a1 40%, #075985 80%, #0c4a6e 100%);
+}
+
+.glass-nav-sky {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.glass-nav {
+  background: rgba(12, 74, 110, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.cyan-glow {
+  box-shadow: 0 0 35px -5px rgba(14, 165, 233, 0.4);
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #38bdf8 100%);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-bg {
+  background-size: 200% 200%;
+  animation: gradientShift 12s ease infinite;
+}
+
